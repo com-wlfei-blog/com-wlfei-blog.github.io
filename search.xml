@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>http://blog.wlfei.com/20160717/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hexo+github pages搭建静态博客]]></title>
+      <url>http://blog.wlfei.com/20160716/hexo-github-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</url>
+      <content type="html"><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo</a>是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<hr>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
+<li>注册域名</li>
+<li>github pages tutorial</li>
+<li><code>hexo init</code>（初始化）</li>
+<li>下载合适的主题（非必须）</li>
+<li>设置根目录和主题的<code>_config.yml</code>文件（部署信息必须设置）</li>
+<li><code>hexo g</code>（生成静态文件）</li>
+<li><code>hexo s</code>（本地测试）</li>
+<li><code>npm install hexo-deployer-heroku --save</code>（部署github用）</li>
+<li><code>hexo d</code>（部署）</li>
+<li>域名与repo关联</li>
+</ol>
+<hr>
+<h1 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h1><ol>
+<li>备份开发文件只需要：根目录和主题的<code>_config.yml</code>文件、你的博文</li>
+<li>重新生成开发文件并上传github时，博客会报错404，解决：在repo的settings中重新设置一次你的域名</li>
+<li><code>&lt;username&gt;.github.io</code> 必须采用ssh与hexo进行同步</li>
+<li><code>hexo</code>开发文件之恩能够保存在本地，在win7 32位系统上无法移动、赋值、压缩（受限于文件路径长度）</li>
+</ol>
+<hr>
+<h1 id="我的参考"><a href="#我的参考" class="headerlink" title="我的参考"></a>我的参考</h1><ul>
+<li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程
+</a></li>
+<li><a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="external">官方部署文档</a></li>
+<li>拥抱<a href="https://www.google.com.hk" target="_blank" rel="external">google</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+  
+  
+</search>

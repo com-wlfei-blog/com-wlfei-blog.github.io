@@ -286,6 +286,133 @@
             
               
                 
+                <a class="post-title-link" href="/20160717/ssh多账号设置-管理多个github-gitcafe账户/" itemprop="url">
+                  ssh多账号设置--管理多个github/gitcafe账户
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-17T21:56:06+08:00" content="2016-07-17">
+              2016-07-17
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/20160717/ssh多账号设置-管理多个github-gitcafe账户/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="20160717/ssh多账号设置-管理多个github-gitcafe账户/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>由于项目需要开始在单机上管理多个github/gitcafe账户</p>
+<p>每个ssh key的设置方式相同，如下</p>
+<p>git bash输入：</p>
+<pre><code>ssh-keygen -t rsa -C &quot;email name&quot;
+</code></pre><p>提示输入文件名的时候不要用默认的，要用有意义的自己记得住的名字<br>我创建ssh key文件命名方式是：</p>
+<pre><code>id_rsa_com_wlfei_www
+id_rsa_com_wlfei_blog
+id_rsa_com_wlfei_email
+</code></pre><p>提示输入key密码，点击enter继续（默认无密码）</p>
+<p>将key添加到ssh agent中：</p>
+<pre><code>ssh-agent bash
+ssh-add `path to your key`
+</code></pre><p>将<code>id_rsa_com_wlfei_www.pub</code>里的内容复制到github ssh设置中，每个public key 用于一个账号，不能重复使用</p>
+<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/2016-07-17_231315.png" alt=""></p>
+<p>在<code>~/.ssh/config</code>（没有则新建此文件）中配置以下内容，每个key 配置一次：</p>
+<pre><code># mail@wlfei.com  # 注释
+Host mail.github.com  # 多个账号时，此名字保持唯一
+    HostName github.com  # host
+    PreferredAuthentications publickey  # 固定内容
+    IdentityFile ~/.ssh/id_rsa_com_wlfei_mail  # path to your key
+</code></pre><p>测试：</p>
+<pre><code>ssh -T git@mail.github.com  # 注意@后面的路径与`config`中的`Host`一致
+</code></pre><p>测试成功如下：</p>
+<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/2016-07-17_231651.png" alt=""></p>
+<p>注意多个账号时，github的复制的ssh路径<strong>不能直接使用</strong>，需要根据<code>config</code>中相应的<code>Host</code>进行修改</p>
+<p>多个ssh key 配置文件最终效果如下：</p>
+<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/2016-07-17_230942.png" alt=""></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/20160716/hexo-github-pages搭建静态博客/" itemprop="url">
                   hexo+github pages搭建静态博客
                 </a>
@@ -455,7 +582,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -472,7 +599,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

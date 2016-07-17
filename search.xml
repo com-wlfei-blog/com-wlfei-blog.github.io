@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title><![CDATA[ssh多账号设置--管理多个github/gitcafe账户]]></title>
+      <url>https://blog.wlfei.com/20160717/ssh%E5%A4%9A%E8%B4%A6%E5%8F%B7%E8%AE%BE%E7%BD%AE-%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AAgithub-gitcafe%E8%B4%A6%E6%88%B7/</url>
+      <content type="html"><![CDATA[<p>由于项目需要开始在单机上管理多个github/gitcafe账户</p>
+<p>每个ssh key的设置方式相同，如下</p>
+<p>git bash输入：</p>
+<pre><code>ssh-keygen -t rsa -C &quot;email name&quot;
+</code></pre><p>提示输入文件名的时候不要用默认的，要用有意义的自己记得住的名字<br>我创建ssh key文件命名方式是：</p>
+<pre><code>id_rsa_com_wlfei_www
+id_rsa_com_wlfei_blog
+id_rsa_com_wlfei_email
+</code></pre><p>提示输入key密码，点击enter继续（默认无密码）</p>
+<p>将key添加到ssh agent中：</p>
+<pre><code>ssh-agent bash
+ssh-add `path to your key`
+</code></pre><p>将<code>id_rsa_com_wlfei_www.pub</code>里的内容复制到github ssh设置中，每个public key 用于一个账号，不能重复使用</p>
+<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/2016-07-17_231315.png" alt=""></p>
+<p>在<code>~/.ssh/config</code>（没有则新建此文件）中配置以下内容，每个key 配置一次：</p>
+<pre><code># mail@wlfei.com  # 注释
+Host mail.github.com  # 多个账号时，此名字保持唯一
+    HostName github.com  # host
+    PreferredAuthentications publickey  # 固定内容
+    IdentityFile ~/.ssh/id_rsa_com_wlfei_mail  # path to your key
+</code></pre><p>测试：</p>
+<pre><code>ssh -T git@mail.github.com  # 注意@后面的路径与`config`中的`Host`一致
+</code></pre><p>测试成功如下：</p>
+<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/2016-07-17_231651.png" alt=""></p>
+<p>注意多个账号时，github的复制的ssh路径<strong>不能直接使用</strong>，需要根据<code>config</code>中相应的<code>Host</code>进行修改</p>
+<p>多个ssh key 配置文件最终效果如下：</p>
+<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/2016-07-17_230942.png" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[hexo+github pages搭建静态博客]]></title>
       <url>https://blog.wlfei.com/20160716/hexo-github-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/47153aebeebf2f3f3e3f5.jpg" class="full-image"></p>

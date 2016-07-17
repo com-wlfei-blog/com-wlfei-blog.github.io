@@ -21,7 +21,7 @@
     <entry>
       <title><![CDATA[hexo+github pages搭建静态博客]]></title>
       <url>http://blog.wlfei.com/20160716/hexo-github-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</url>
-      <content type="html"><![CDATA[<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/47153aebeebf2f3f3e3f5.jpg" alt=""></p>
+      <content type="html"><![CDATA[<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/47153aebeebf2f3f3e3f5.jpg" class="full-image"></p>
 <p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo</a>是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <hr>
 <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>

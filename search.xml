@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title><![CDATA[支付宝,我很讨厌你,越来越讨厌]]></title>
+      <url>https://blog.wlfei.com/20160723/%E6%94%AF%E4%BB%98%E5%AE%9D-%E6%88%91%E5%BE%88%E8%AE%A8%E5%8E%8C%E4%BD%A0-%E8%B6%8A%E6%9D%A5%E8%B6%8A%E8%AE%A8%E5%8E%8C/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>支付宝是一个想删除但又不得不保留的app</p>
+</blockquote>
+<p>如果iphone只能装3个第三方软件，按次序我会选择：</p>
+<ul>
+<li>微信</li>
+<li>印象笔记</li>
+<li>支付宝</li>
+</ul>
+<p><strong>微信</strong>是生活工作必不可少的聊天工具，有时候也用来充充话费，界面整洁，体验良好，除了占用手机空间大，个人感觉没什么可吐槽的</p>
+<p><strong>印象笔记</strong>作为跨平台的知识管理软件，也用了好几年了，偶尔上传大量资料买个会员，其余一直免费模式走起。除了官方配件很贵，也没啥吐槽的（反正我一个穷人也不买~）</p>
+<p><strong>唯独支付宝，是一个必用但特别讨厌的app</strong></p>
+<p>现在我都是带着<strong>忍受</strong>的心情打开支付宝</p>
+<p>我想问：下面这些必须打开才能消除的小红点，你不觉得用户点多了会觉得很恶心吗？</p>
+<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/IMG_0242.png" alt=""></p>
+<p><img src="http://com-wlfei.oss-cn-shanghai.aliyuncs.com/image/IMG_0241.jpg" alt=""></p>
+<p>不是聊天工具，却始终提示我<code>朋友</code>界面有消息（为什么你拉了亿级的好友却不能成为大家的聊天工具？别问我，教育用户是产品经理该解决的事儿）</p>
+<p><code>支付助手</code>无法关闭通知，无法屏蔽</p>
+<p><code>消息中心</code>无法关闭通知，无法屏蔽</p>
+<p><code>服务窗</code>无法关闭通知，无法屏蔽</p>
+<p>每次在商场用支付宝付款，服务窗就默认多几个公众号，随后大摇大摆打一堆红色标识发各种广告······</p>
+<p>这样就能提高聊天功能转化率？提高用户粘性？我也就呵呵了，我相信多数人也是呵呵的</p>
+<p>一个大而全的app，却让用户没有打开的冲动，甚至想避而远之，这应该不能怪用户吧？</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[ssh多账号设置--管理多个github/gitcafe账户]]></title>
       <url>https://blog.wlfei.com/20160717/ssh%E5%A4%9A%E8%B4%A6%E5%8F%B7%E8%AE%BE%E7%BD%AE-%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AAgithub-gitcafe%E8%B4%A6%E6%88%B7/</url>
       <content type="html"><![CDATA[<p>由于项目需要开始在单机上管理多个github/gitcafe账户</p>
